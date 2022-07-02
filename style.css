@@ -28,7 +28,7 @@ html,body{
     aspect-ratio: 1/1;
     width: min(90% , 450px);
     background-color: #1c1c1c;
-    padding: 1.5rem  1.5rem 0 1.5rem;
+    padding: 1.5rem;
     font-size: 1.8rem;
     color: #c3ff52;
     font-family: 'Courier New', Courier, monospace;
