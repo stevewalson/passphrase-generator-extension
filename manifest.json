@@ -1,0 +1,14 @@
+{
+    "name":"Passphrase Generator",
+    "version":"0.1.0",
+    "description": "Easily generate strong passphrases",
+    "manifest_version":3,
+    "action": {
+        "default-popup":"popup.html",
+        "default-icon":"icon.png"
+    },
+    "icons":{
+        "128":"icon.png"
+    },
+    "permissions": ["activeTab"]
+}
