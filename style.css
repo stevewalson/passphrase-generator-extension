@@ -1,59 +1,70 @@
-*,*::before,*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    aspect-ratio: 1/1;
-    width: 500px;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    overflow: hidden;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+html,
+body {
+  aspect-ratio: 1/1;
+  width: 500px;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
 }
 
-.passphrase{
-    background-color: #1c1c1c;
-    font-size: 1.3rem;
-    color: #c3ff52;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.5;
-    padding: 1rem;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
-button{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0.5rem 2.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-    display: block;
-    user-select: none;
+
+.passphrase {
+  border: 2px solid #c3ff52;
+  font-size: 1.3rem;
+  color: #c3ff52;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  width: fit-content;
+  padding: 1rem;
 }
-.buttons{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  user-select: none;
 }
-.generate{
-    border: none;
-    background-color: #c3ff52;
+button:active {
+  transform: scale(0.98);
 }
-.copy{
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background-color: transparent;
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
-.generate:active{
-    transform: scale(0.98);
+.generate {
+  border: none;
+  background-color: #c3ff52;
+  transition: box-shadow 100ms ease-in-out;
+}
+
+.copy {
+  border: 2px solid #c3ff52;
+  color: #c3ff52;
+  background-color: transparent;
+}
+.clear {
+  border: none;
+  background-color: transparent;
+  color: #c3ff52;
 }
